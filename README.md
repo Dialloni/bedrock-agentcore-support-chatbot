@@ -7,7 +7,12 @@ from a provided FAQ, files bug tickets into DynamoDB through a Gateway-invoked
 Lambda tool, and hands anything else off to a human support line.
 
 Built for the Udacity AWS AI Engineer project; evaluated with Bedrock
-Evaluations (LLM-as-a-judge).
+Evaluations (LLM-as-a-judge). **Submitted and passed** — Udacity Project
+Completion badge awarded.
+
+<p align="center">
+  <img src="screenshots/udacity-completion-badge.png" alt="Udacity Project Completion badge — Customer Support Chatbot with Amazon Bedrock" width="380">
+</p>
 
 ## What it does
 
@@ -112,7 +117,7 @@ Faithfulness at 1.00 is the headline result: the FAQ-grounding constraint held
 across every case. Per-example breakdown is in `output_eval_dataset.jsonl`;
 console screenshots are in `screenshots/pics/`.
 
-## Note on project architecture (for graders)
+## Note on project architecture
 
 This submission uses the **AgentCore managed harness** rather than **Bedrock
 Flows**, per the course's own updated Project Instructions and Testing and
@@ -136,3 +141,5 @@ Equivalent evidence for this architecture:
   persistence, FAQ-grounded answers, human hand-off, automated evaluation with
   Bedrock Evaluations — are implemented and verified in the screenshots and
   output files.
+
+This architecture was accepted and the project passed review.
